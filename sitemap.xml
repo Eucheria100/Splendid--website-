@@ -1,8 +1,21 @@
-
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://eucheria100.github.io/Splendid--website-/</loc></url>
-  <url><loc>https://eucheria100.github.io/Splendid--website-/shop.html</loc></url>
-  <url><loc>https://eucheria100.github.io/Splendid--website-/product.html</loc></url>
-  <url><loc>https://eucheria100.github.io/Splendid--website-/about.html</loc></url>
-  <url><loc>https://eucheria100.github.io/Splendid--website-/contact.html</loc></url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://sitemaps.org">
+  <url>
+    <loc>https://example.com</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://example.comabout</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://example.comblog</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
