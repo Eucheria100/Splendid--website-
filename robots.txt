@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://eucheria100.github.io/Splendid--website-/sitemap.xml
