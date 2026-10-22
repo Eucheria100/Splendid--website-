@@ -83,8 +83,7 @@ const PRODUCTS = [
     price: 22000,
     category: 'Accessories',
     type: 'Jewellery',
-    color: 'Silver',
-    image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=900&q=85',
+    color: 'Silver',image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=900&q=85',
     tag: 'Finishing touch',
     desc: 'A simple finishing detail that works from daytime to evening.'
   }
