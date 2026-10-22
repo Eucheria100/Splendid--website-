@@ -237,6 +237,38 @@ function renderProduct() {
       `${product.name}. ${product.desc} Explore Splendid's contemporary fashion, inspired by African expression and everyday style.`
     );
   }
+  
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": product.name,
+    "image": [product.image],
+    "description": product.desc,
+    "brand": {
+      "@type": "Brand",
+      "name": "Splendid"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": `https://eucheria100.github.io/Splendid--website-/product.html?id=${encodeURIComponent(product.id)}`,
+      "priceCurrency": "NGN",
+      "price": product.price.toString(),
+      "itemCondition": "https://schema.org/NewCondition"
+    }
+  };
+
+  let productSchemaScript = document.querySelector(
+    'script[data-product-schema]'
+  );
+
+  if (!productSchemaScript) {
+    productSchemaScript = document.createElement('script');
+    productSchemaScript.type = 'application/ld+json';
+    productSchemaScript.setAttribute('data-product-schema', '');
+    document.head.appendChild(productSchemaScript);
+  }
+
+  productSchemaScript.textContent = JSON.stringify(productSchema);
   root.innerHTML = `
     <div class="product-detail-image">
       <img src="${product.image}" alt="${product.name}">
