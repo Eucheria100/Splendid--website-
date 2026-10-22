@@ -228,7 +228,15 @@ function renderProduct() {
 
   const id = new URLSearchParams(location.search).get('id') || PRODUCTS[0].id;
   const product = PRODUCTS.find(item => item.id === id) || PRODUCTS[0];
+  document.title = `${product.name} | Splendid`;
 
+  const descriptionMeta = document.querySelector('meta[name="description"]');
+  if (descriptionMeta) {
+    descriptionMeta.setAttribute(
+      'content',
+      `${product.name}. ${product.desc} Explore Splendid's contemporary fashion, inspired by African expression and everyday style.`
+    );
+  }
   root.innerHTML = `
     <div class="product-detail-image">
       <img src="${product.image}" alt="${product.name}">
