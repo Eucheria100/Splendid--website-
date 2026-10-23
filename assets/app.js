@@ -85,10 +85,65 @@ const PRODUCTS = [
     type: 'Jewellery',
     color: 'Silver',image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=900&q=85',
     tag: 'Finishing touch',
+    
     desc: 'A simple finishing detail that works from daytime to evening.'
-  }
+  },
+  {
+    id: 'adire-coord',
+    name: 'The Adire Co-ord',
+    price: 85000,
+    category: 'Women',
+    type: 'Clothing',
+    color: 'Indigo',
+    image: 'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=85',
+    tag: 'African Heritage Edit',
+    desc: 'A contemporary two-piece look inspired by the rich indigo traditions of Nigerian Adire textiles.'
+  },
+  {
+    id: 'ankara-dress',
+    name: 'The Ankara Statement Dress',
+    price: 95000,
+    category: 'Women',
+    type: 'Clothing',
+    color: 'Multicolour',
+    image: 'https://images.unsplash.com/photo-1612336307429-8a898d10e223?auto=format&fit=crop&w=900&q=85',
+    tag: 'African Heritage Edit',
+    desc: 'A bold statement dress inspired by the energy and expressive patterns of African print fashion.'
+  },
+  {
+    id: 'heritage-woven-bag',
+    name: 'The Heritage Woven Bag',
+    price: 55000,
+    category: 'Accessories',
+    type: 'Accessories',
+    color: 'Natural',
+    image: 'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=85',
+    tag: 'African Heritage Edit',
+    desc: 'A natural-toned everyday bag celebrating woven textures and timeless, versatile style.'
+  },
+  {
+    id: 'beaded-heritage-earrings',
+    name: 'The Beaded Heritage Earrings',
+    price: 25000,
+    category: 'Accessories',
+    type: 'Jewellery',
+    color: 'Multicolour',
+    image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=900&q=85',
+    tag: 'African Heritage Edit',
+    desc: 'Expressive statement earrings inspired by the colour and artistry of African beadwork.'
+  },
+  {
+    id: 'modern-heritage-shirt',
+    name: 'The Modern Heritage Shirt',
+    price: 60000,
+    category: 'Men',
+    type: 'Clothing',
+    color: 'Earth tones',
+    image: 'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=900&q=85',
+    tag: 'African Heritage Edit',
+    desc: 'A modern wardrobe staple inspired by African patterns, warm earth tones and relaxed tailoring.'
+  },
 ];
-
 const money = n => '₦' + Number(n).toLocaleString('en-NG');
 
 function getBag() {
