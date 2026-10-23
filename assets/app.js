@@ -131,7 +131,8 @@ const PRODUCTS = [
     category: 'Accessories',
     type: 'Jewellery',
     color: 'Multicolour',
-    image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=900&q=85',
+    
+    image: 'https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=900&q=85',
     tag: 'African Heritage Edit',
     desc: 'Expressive statement earrings inspired by the colour and artistry of African beadwork.'
   },
