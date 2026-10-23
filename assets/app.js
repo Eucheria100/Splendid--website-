@@ -143,6 +143,7 @@ const PRODUCTS = [
     category: 'Men',
     type: 'Clothing',
     color: 'Earth tones',
+    
     image: 'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=900&q=85',
     tag: 'African Heritage Edit',
     desc: 'A modern wardrobe staple inspired by African patterns, warm earth tones and relaxed tailoring.'
