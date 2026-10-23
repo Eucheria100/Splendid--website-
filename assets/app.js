@@ -119,7 +119,8 @@ const PRODUCTS = [
     category: 'Accessories',
     type: 'Accessories',
     color: 'Natural',
-    image: 'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=85',
+    
+    image: 'https://images.unsplash.com/photo-1590736969955-71cc94901144?auto=format&fit=crop&w=900&q=85',
     tag: 'African Heritage Edit',
     desc: 'A natural-toned everyday bag celebrating woven textures and timeless, versatile style.'
   },
