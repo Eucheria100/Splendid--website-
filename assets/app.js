@@ -107,7 +107,8 @@ const PRODUCTS = [
     category: 'Women',
     type: 'Clothing',
     color: 'Multicolour',
-    image: 'https://images.unsplash.com/photo-1612336307429-8a898d10e223?auto=format&fit=crop&w=900&q=85',
+    
+    image: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=900&q=85',
     tag: 'African Heritage Edit',
     desc: 'A bold statement dress inspired by the energy and expressive patterns of African print fashion.'
   },
