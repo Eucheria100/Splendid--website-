@@ -95,6 +95,7 @@ const PRODUCTS = [
     category: 'Women',
     type: 'Clothing',
     color: 'Indigo',
+    
     image: 'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=85',
     tag: 'African Heritage Edit',
     desc: 'A contemporary two-piece look inspired by the rich indigo traditions of Nigerian Adire textiles.'
