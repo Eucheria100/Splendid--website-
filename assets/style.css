@@ -122,3 +122,68 @@ body {
     font-size: 13px;
   }
 }
+
+/* SPLENDID — CLEARER FONTS & MORE VISIBLE COLOURS */
+
+:root {
+  --ink: #191714;
+  --paper: #FFF9F0;
+  --white: #FFFFFF;
+  --clay: #C34E30;
+  --gold: #E0B451;
+  --olive: #77834E;
+  --muted: #514B43;
+  --line: #D6C7B3;
+}
+
+body {
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4,
+.hero h1,
+.section-head h2,
+.page-title,
+.product-detail-copy h1 {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+p, li, label {
+  color: var(--muted);
+}
+
+.navlinks a,
+.navtools,
+.logo,
+.product-meta h3,
+.product-meta .price {
+  font-weight: 700;
+}
+
+.hero p,
+.page-hero p,
+.about-copy p,
+.editorial-copy p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.button {
+  background-color: var(--ink);
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.button:hover {
+  background-color: var(--clay);
+  border-color: var(--clay);
+}
+
+.eyebrow,
+.tag,
+.category-label {
+  font-weight: 700;
+}
