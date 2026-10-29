@@ -296,10 +296,13 @@ function renderProduct() {
       <div class="swatches">
         <button class="swatch active">${product.color}</button>
       </div>
-      <div class="quantity-row">
-        <input type="number" min="1" max="10" value="1" aria-label="Quantity" data-qty>
-        <button class="button" data-add="${product.id}">Add to bag →</button>
-      </div>
+<div class="quantity-row">
+  <input type="number" min="1" max="10" value="1" aria-label="Quantity" data-qty>
+  <button class="button" data-add="${product.id}">Add to bag →</button>
+</div>
+<button class="button whatsapp-order" data-whatsapp-order="${product.id}" style="margin-top:12px;width:100%">
+  Order on WhatsApp
+</button>   
       <p data-added-note class="form-note" aria-live="polite"></p>
       <div class="notice">
         Demo store: payment, delivery, stock and checkout are not connected yet.
