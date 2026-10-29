@@ -73,17 +73,36 @@ body {
   font-size: 13px;
 }
 
-/* Clearer product names and prices */
+
+/* Clear, readable product names and prices */
 .product-meta h3 {
   font-size: 15px;
   font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 6px;
+  overflow-wrap: anywhere;
 }
 
 .product-meta p,
 .price {
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-top: 0;
 }
+
+/* Keep product names and prices readable on phones */
+@media (max-width: 420px) {
+  .product-meta h3 {
+    font-size: 13px;
+  }
+
+  .product-meta p,
+  .price {
+    font-size: 13px;
+  }
+}
+
 
 .tag,
 .eyebrow {
