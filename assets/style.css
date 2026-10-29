@@ -206,3 +206,56 @@ p, li, label {
 .category-label {
   font-weight: 700;
 }
+
+/* Splendid mobile shop layout fix */
+.shop-grid .product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px 12px;
+  align-items: start;
+}
+
+.shop-grid .product-card {
+  min-width: 0;
+  height: auto;
+}
+
+.shop-grid .product-image {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.shop-grid .product-meta {
+  display: block;
+  position: static;
+  height: auto;
+  padding: 8px 0 0;
+  overflow-wrap: anywhere;
+}
+
+.shop-grid .product-meta h3 {
+  position: static;
+  margin: 0 0 6px;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+.shop-grid .product-meta p {
+  position: static;
+  margin: 0;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+.shop-grid > .notice {
+  clear: both;
+  margin-top: 28px;
+  line-height: 1.6;
+}
+
+@media (min-width: 801px) {
+  .shop-grid .product-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
