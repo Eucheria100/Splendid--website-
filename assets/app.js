@@ -91,7 +91,8 @@ const PRODUCTS = [
   ];
 
 const money = n => '₦' + Number(n).toLocaleString('en-NG');
-
+// Splendid WhatsApp business number
+const WHATSAPP_NUMBER = '2348141174350';
 function getBag() {
   try {
     return JSON.parse(localStorage.getItem('splendidBag') || '[]');
