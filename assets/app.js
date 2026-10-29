@@ -343,6 +343,19 @@ document.addEventListener('click', event => {
     size.classList.add('active');
   }
 
+  const whatsappOrder = event.target.closest('[data-whatsapp-order]');
+  if (whatsappOrder) {
+    const product = PRODUCTS.find(item => item.id === whatsappOrder.dataset.whatsappOrder);
+    if (product) {
+      const size = document.querySelector('[data-size].active')?.dataset.size || 'One size';
+      const quantity = Math.max(1, Math.min(10, Number(document.querySelector('[data-qty]')?.value || 1)));
+      const message = `Hello Splendid! I'd like to order:\n${product.name}\nSize: ${size}\nQuantity: ${quantity}\nPrice: ${money(product.price)}\nTotal: ${money(product.price * quantity)}`;
+      const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+      window.open(url, '_blank');
+    }
+    return;
+  }
+
   const add = event.target.closest('[data-add]');
   if (add) {
     const selectedSize =
