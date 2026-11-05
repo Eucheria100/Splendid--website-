@@ -6,6 +6,7 @@ const PRODUCTS = [
     price: 48000,
     category: 'Women',
     type: 'Clothing',
+    sizes: ['XS', 'S', 'M', 'L', 'XL'],
     color: 'Ivory',
     image: 'https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=900&q=85',
     tag: 'New',
@@ -17,6 +18,7 @@ const PRODUCTS = [
     price: 85000,
     category: 'Women',
     type: 'Clothing',
+    sizes: ['XS', 'S', 'M', 'L', 'XL'],
     color: 'Indigo',
     image: 'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=85',
     tag: 'Signature',
@@ -28,7 +30,8 @@ const PRODUCTS = [
     price: 92000,
     category: 'Men',
     type: 'Clothing',
-    color: 'Sand',
+    sizes: ['XS', 'S', 'M', 'L', 'XL'],
+    color: 'Blue',
     image: 'https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=900&q=85',
     tag: 'Bestseller',
     desc: 'A modern wardrobe layer with a clean shape and a relaxed, versatile feel.'
@@ -39,7 +42,8 @@ const PRODUCTS = [
     price: 76000,
     category: 'Women',
     type: 'Clothing',
-    color: 'Terracotta',
+    sizes: ['XS', 'S', 'M', 'L', 'XL'],
+    color: 'Light Blue',
     image: 'https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=900&q=85',
     tag: 'Limited edit',
     desc: 'An expressive silhouette designed for celebrations, dinners, and memorable moments.'
@@ -50,6 +54,7 @@ const PRODUCTS = [
     price: 65000,
     category: 'Accessories',
     type: 'Footwear',
+    sizes: ['38', '39', '40', '41', '42', '43', '44', '45', '46'],
     color: 'Red',
     image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85',
     tag: 'Everyday',
@@ -61,7 +66,8 @@ const PRODUCTS = [
     price: 38000,
     category: 'Accessories',
     type: 'Accessories',
-    color: 'Natural',
+    sizes: ['S', 'M', 'L'],
+    color: 'Brown',
     image: 'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=85',
     tag: 'Craft detail',
     desc: 'A practical carryall with texture and an easy everyday shape.'
@@ -72,6 +78,7 @@ const PRODUCTS = [
     price: 52000,
     category: 'Men',
     type: 'Clothing',
+    sizes: ['XS', 'S', 'M', 'L', 'XL'],
     color: 'White',
     image: 'https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=900&q=85',
     tag: 'Warm-weather',
@@ -79,14 +86,15 @@ const PRODUCTS = [
   },
   {
     id: 'gold-earrings',
-    name: 'Sculpted Gold-tone Hoops',
+    name: 'Sculpted Silver-tone Hoops',
     price: 22000,
     category: 'Accessories',
     type: 'Jewellery',
+    sizes: ['One size'],
     color: 'Silver',image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=900&q=85',
     tag: 'Finishing touch',
     
-    desc: 'A simple finishing detail that works from daytime to evening.'
+    desc: 'Silver-tone hoop earrings finished with powder-blue stones.'
   },
   ];
 
@@ -285,11 +293,8 @@ function renderProduct() {
       </p>
       <div class="option-label">Choose size</div>
       <div class="sizes">
-        ${(product.type === 'Accessories' || product.type === 'Jewellery' || product.type === 'Footwear'
-          ? ['One size', 'S', 'M', 'L']
-          : ['XS', 'S', 'M', 'L', 'XL']
-        ).map((size, index) => `
-          <button class="size-btn ${index === 1 ? 'active' : ''}" data-size="${size}">${size}</button>
+        ${product.sizes.map((size, index) => `
+          <button class="size-btn ${index === Math.min(1, product.sizes.length - 1) ? 'active' : ''}" data-size="${size}">${size}</button>
         `).join('')}
       </div>
       <div class="option-label">Colour · ${product.color}</div>
