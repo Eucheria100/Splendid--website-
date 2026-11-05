@@ -67,7 +67,7 @@ const PRODUCTS = [
     category: 'Accessories',
     type: 'Accessories',
     sizes: ['S', 'M', 'L'],
-    color: 'Brown',
+    color: 'Burgundy',
     image: 'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=85',
     tag: 'Craft detail',
     desc: 'Elegantly crafted with a rich brown leather finish, the Market Day Tote effortlessly blends style with everyday practicality. Spacious and versatile, it is ideal for work, weekend outings, and daily errands alike. A timeless accessory, it complements any look and carries you confidently through your day.'
