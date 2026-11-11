@@ -259,3 +259,44 @@ p, li, label {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
+
+
+/* Readability improvements: larger text throughout the site */
+body{font-size:17px;line-height:1.65}
+.announcement{font-size:13px}
+.navlinks,.navtools{font-size:14px}
+.logo small{font-size:11px}
+.eyebrow{font-size:12px}
+.button{font-size:13px}
+.text-link{font-size:14px}
+.category-label{font-size:13px}
+.category-label strong{font-size:26px}
+.product-meta h3{font-size:15px;line-height:1.45}
+.product-meta p{font-size:14px}
+.tag{font-size:11px}
+.benefit span,.footer-brand p,.footer-links,.footer-bottom{font-size:14px}
+.footer h4{font-size:12px}
+.page-hero p,.editorial-copy p,.about-copy p{font-size:16px;line-height:1.7}
+.filter-btn,select{font-size:13px}
+.product-detail-copy h1{font-size:clamp(38px,4.4vw,54px)}
+.product-detail-copy .price{font-size:19px}
+.product-description{font-size:16px;line-height:1.75}
+.product-colour-note{margin:14px 0 18px;padding:12px 14px;background:#e9dfd0;color:var(--ink);font-size:15px;line-height:1.6;border-left:3px solid var(--olive)}
+.option-label{font-size:13px}
+.swatch,.size-btn{font-size:14px}
+.field{font-size:13px}
+.field input,.field select,.field textarea{font-size:15px}
+.notice,.form-note,.cart-note{font-size:14px}
+.cart-item{font-size:14px}
+.cart-note{line-height:1.6}
+@media(max-width:800px){
+  body{font-size:16px}
+  .navlinks,.navtools{font-size:14px}
+  .hero p{font-size:16px}
+  .product-meta h3{font-size:15px}
+  .product-meta p{font-size:14px}
+  .product-detail-copy h1{font-size:clamp(36px,8vw,46px)}
+  .product-description{font-size:16px}
+  .product-colour-note{font-size:15px}
+  .button{font-size:13px}
+}
