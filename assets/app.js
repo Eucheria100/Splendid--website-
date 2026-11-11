@@ -202,15 +202,17 @@ function renderBag() {
   const bag = getBag();
 
   element.innerHTML = bag.length
-    ? bag.map((item, index) => `
+    ? `
+      <div class="cart-actions">
+        <button type="button" data-clear-cart class="cart-clear">Remove all items</button>
+      </div>
+      ` + bag.map((item, index) => `
         <div class="cart-item">
           <img src="${item.image}" alt="${item.name}">
           <div>
             <strong>${item.name}</strong>
             <p>Size: ${item.size} · Qty: ${item.qty}</p>
-            <button data-remove="${index}" style="border:0;background:none;text-decoration:underline;padding:0;font-size:11px">
-              Remove
-            </button>
+            <button type="button" data-remove="${index}" class="cart-remove">Remove item</button>
           </div>
           <strong>${money(item.price * item.qty)}</strong>
         </div>
@@ -373,11 +375,21 @@ document.addEventListener('click', event => {
     addToBag(add.dataset.add, selectedSize, quantity);
   }
 
+  const clearCart = event.target.closest('[data-clear-cart]');
+  if (clearCart) {
+    saveBag([]);
+    return;
+  }
+
   const remove = event.target.closest('[data-remove]');
   if (remove) {
     const bag = getBag();
-    bag.splice(Number(remove.dataset.remove), 1);
-    saveBag(bag);
+    const index = Number(remove.dataset.remove);
+    if (Number.isInteger(index) && index >= 0 && index < bag.length) {
+      bag.splice(index, 1);
+      saveBag(bag);
+    }
+    return;
   }
 });
 
