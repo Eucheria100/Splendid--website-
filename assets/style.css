@@ -400,3 +400,11 @@ body .footer-links,body .footer-brand p,body .footer-bottom,body .benefit span{f
   body .product-colour-note{font-size:18px!important}
   body .footer-links,body .footer-brand p,body .footer-bottom{font-size:16px!important}
 }
+
+
+/* Clear and remove cart controls */
+.cart-actions{display:flex;justify-content:flex-end;margin:0 0 16px}
+.cart-clear,.cart-remove{font-size:16px!important;min-height:42px;padding:9px 14px;border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;text-decoration:none}
+.cart-remove{margin-top:8px}
+.cart-clear:hover,.cart-remove:hover{background:var(--ink);color:#fff}
+.cart-close{min-width:44px;min-height:44px;font-size:28px!important;cursor:pointer;touch-action:manipulation}
