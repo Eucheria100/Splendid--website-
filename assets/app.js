@@ -82,7 +82,7 @@ const PRODUCTS = [
     color: 'White',
     image: 'https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=900&q=85',
     tag: 'Warm-weather',
-    desc: 'A light, easy layer for warm weather and relaxed occasions.'
+    desc: 'A light, easy layer for warm weather and relaxed occasions. Available in other colours. Contact us on WhatsApp to enquire.'
   },
   {
     id: 'gold-earrings',
