@@ -287,7 +287,8 @@ function renderProduct() {
       <div class="eyebrow">${product.tag} · SPLENDID</div>
       <h1>${product.name}</h1>
       <div class="price">${money(product.price)}</div>
-      <p class="muted">${product.desc}</p>
+      <p class="muted product-description">${product.desc}</p>
+      <p class="product-colour-note">Available in other colours. Contact us on WhatsApp to enquire.</p>
       <p class="muted" style="font-size:12px">
         Designed for everyday expression. Please confirm fit, fabric, and care details with our team before ordering.
       </p>
