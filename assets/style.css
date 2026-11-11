@@ -300,3 +300,52 @@ body{font-size:17px;line-height:1.65}
   .product-colour-note{font-size:15px}
   .button{font-size:13px}
 }
+
+
+/* Mobile-first readability and layout correction */
+body{font-size:18px;line-height:1.75}
+p,li{font-size:17px;line-height:1.75}
+.announcement{font-size:14px}
+.navlinks,.navtools{font-size:15px}
+.hero p,.page-hero p,.editorial-copy p,.about-copy p{font-size:18px;line-height:1.8}
+.product-meta h3{font-size:17px;line-height:1.5}
+.product-meta p{font-size:16px}
+.product-detail-copy h1{font-size:clamp(40px,5vw,58px);line-height:1.12}
+.product-detail-copy .price{font-size:21px}
+.product-description{font-size:18px;line-height:1.8}
+.product-colour-note{font-size:17px;line-height:1.75;padding:14px 16px}
+.option-label{font-size:15px}
+.swatch,.size-btn{font-size:16px;padding:12px 15px}
+.button{font-size:15px;padding:16px 20px}
+.notice,.form-note,.cart-note{font-size:16px;line-height:1.7}
+.field{font-size:15px}
+.field input,.field select,.field textarea{font-size:17px}
+.footer-links,.footer-brand p,.footer-bottom,.benefit span{font-size:15px}
+
+/* Treat narrow desktop-mode phone browsers as mobile layouts too */
+@media(max-width:1100px){
+  .nav{padding-left:18px;padding-right:18px}
+  .navlinks{display:none}
+  .menu-toggle{display:block}
+  .mobile-menu.open{display:grid}
+  .product-detail{grid-template-columns:minmax(0,1fr);gap:24px}
+  .product-detail-image{max-width:720px;margin:0 auto;width:100%}
+  .product-detail-copy{max-width:720px;width:100%;margin:0 auto;padding-top:0}
+  .container{padding-left:20px;padding-right:20px}
+  .product-detail-copy h1{font-size:clamp(40px,6vw,56px)}
+  .product-description{font-size:18px}
+  .product-colour-note{font-size:17px}
+}
+@media(max-width:600px){
+  body{font-size:18px}
+  p,li{font-size:17px}
+  .container{padding-left:16px;padding-right:16px}
+  .product-detail{padding-top:18px;padding-bottom:40px}
+  .product-detail-copy h1{font-size:38px}
+  .product-detail-copy .price{font-size:21px}
+  .product-description{font-size:18px}
+  .product-colour-note{font-size:17px}
+  .option-label{font-size:15px}
+  .swatch,.size-btn{font-size:16px}
+  .button{font-size:15px}
+}
