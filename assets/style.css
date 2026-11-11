@@ -349,3 +349,54 @@ p,li{font-size:17px;line-height:1.75}
   .swatch,.size-btn{font-size:16px}
   .button{font-size:15px}
 }
+
+
+/* Site-wide typography enlargement — all pages and sections */
+html{font-size:20px}
+body{font-size:20px!important;line-height:1.8!important}
+body :is(p,li,dd,dt,label,legend,figcaption,blockquote){font-size:18px!important;line-height:1.8!important}
+body :is(a,button,input,select,textarea){font-size:17px!important;line-height:1.5!important}
+body :is(h1,h2,h3,h4,h5,h6){line-height:1.2!important}
+body h1{font-size:clamp(38px,5vw,60px)!important}
+body h2{font-size:clamp(32px,4.2vw,48px)!important}
+body h3{font-size:25px!important}
+body h4{font-size:19px!important}
+body .logo{font-size:32px!important}
+body .logo small{font-size:13px!important}
+body .announcement{font-size:14px!important}
+body .eyebrow,body .tag{font-size:13px!important}
+body .navlinks,body .navtools{font-size:16px!important}
+body .hero p,body .page-hero p,body .editorial-copy p,body .about-copy p{font-size:19px!important;line-height:1.85!important}
+body .category-label{font-size:16px!important}
+body .category-label strong{font-size:29px!important}
+body .product-meta h3{font-size:18px!important;line-height:1.5!important}
+body .product-meta p{font-size:17px!important}
+body .button,body button.button{font-size:16px!important;padding:17px 22px}
+body .filter-btn,body select{font-size:16px!important;padding:12px 15px}
+body .field{font-size:16px!important}
+body .field input,body .field select,body .field textarea{font-size:18px!important;padding:15px}
+body .option-label{font-size:16px!important}
+body .swatch,body .size-btn{font-size:17px!important;padding:13px 16px}
+body .product-detail-copy h1{font-size:clamp(40px,5vw,60px)!important}
+body .product-detail-copy .price{font-size:23px!important}
+body .product-description{font-size:19px!important;line-height:1.85!important}
+body .product-colour-note{font-size:18px!important;line-height:1.8!important}
+body .notice,body .form-note,body .cart-note{font-size:16px!important;line-height:1.75!important}
+body .footer-links,body .footer-brand p,body .footer-bottom,body .benefit span{font-size:16px!important;line-height:1.7!important}
+@media(max-width:800px){
+  html{font-size:19px}
+  body{font-size:19px!important;line-height:1.8!important}
+  body :is(p,li,dd,dt,label,legend,figcaption,blockquote){font-size:18px!important}
+  body :is(a,button,input,select,textarea){font-size:17px!important}
+  body h1{font-size:40px!important}
+  body h2{font-size:34px!important}
+  body h3{font-size:24px!important}
+  body .navtools{font-size:15px!important}
+  body .hero p,body .page-hero p,body .editorial-copy p,body .about-copy p{font-size:18px!important}
+  body .product-meta h3{font-size:18px!important}
+  body .product-meta p{font-size:17px!important}
+  body .product-detail-copy h1{font-size:40px!important}
+  body .product-description{font-size:19px!important}
+  body .product-colour-note{font-size:18px!important}
+  body .footer-links,body .footer-brand p,body .footer-bottom{font-size:16px!important}
+}
